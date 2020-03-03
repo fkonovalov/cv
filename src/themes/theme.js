@@ -14,7 +14,7 @@ const colors = {
   brand: brandColor,
   accentColors,
   white: '#FFFFFF',
-  black: '#454545', 
+  black: '#454545',
   darkColors,
   lightColors,
   red: '#FF0000',
@@ -23,6 +23,7 @@ const colors = {
   green: '#00ab6b',
   darkGreen: '#038252',
   lightGreen: '#00ab6b2e',
+  bgColors: '#e3e3e3',
 
   blackShades: [
     '#393E41',
@@ -155,6 +156,9 @@ const theme = {
     padding: `${scale(0)} 0`,
     backgroundColor: colors.accentColors[1]
   },
+  timeline: {
+    backgroundColor: colors.bgColors
+  },
   h1: {
     fontSize: scale(5.8),
     margin: 0,
@@ -168,7 +172,7 @@ const theme = {
   h3: {
     fontSize: scale(3),
     margin: 0,
-    padding: `${scale(6)} 0 0 0`
+    padding: `0 0 0 0`
   },
   h4: {
     fontSize: scale(2),
