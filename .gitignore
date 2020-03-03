@@ -1,0 +1,25 @@
+### OSX template
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### vscode template
+.vscode/
+
+# Dependency directory
+node_modules
+
+*.swp
+.sass-cache/
+temp.coffee
+deploy.db
+assets/sass/bower_components/
+.build/
+public/
+.intermediate-representation/
+.cache/
+package-lock.json
+.history
