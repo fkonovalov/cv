@@ -30,7 +30,7 @@ const Timeline = ({ className, langKey }) => {
               contentArrowStyle={{
                 borderRight: "7px solid  rgb(33, 150, 243)"
               }}
-              date="2014 - present"
+              date="2017 - present"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon={<IconWork />}
             >
@@ -38,63 +38,72 @@ const Timeline = ({ className, langKey }) => {
                 Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                Saint-Petersburg, RU
+                <a href="https://space307.com/">Space307</a>
               </h4>
               <p>
                 UI development, Visual Design, ReactJS, SCSS, TWIG, GatsbyJS,
               </p>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2010 - 2011"
+              date="2016 - present"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon={<IconWork />}
             >
-              <h3 className="vertical-timeline-element-title">Art Director</h3>
+              <h3 className="vertical-timeline-element-title">Co Founder</h3>
               <h4 className="vertical-timeline-element-subtitle">
-                San Francisco, CA
+                <a href="https://tagbox.me/">TagBox</a>
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, SEO, Online
-                Marketing
+                TagBox aims to create an easy experience to built up an e-commerce site through an instagram account.
               </p>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2008 - 2010"
+              date="2016 - 2017"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon={<IconEducation />}
             >
-              <h3 className="vertical-timeline-element-title">Web Designer</h3>
+              <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
               <h4 className="vertical-timeline-element-subtitle">
-                Los Angeles, CA
+                <a href="https://selectel.ru/">Selectel - IT Infrastructure Solutions</a>
               </h4>
-              <p>User Experience, Visual Design</p>
+              <p>UI development, Angular, Native Javascript, jQuery, SCSS</p>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2006 - 2008"
+              date="2014 - 2015"
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             >
-              <h3 className="vertical-timeline-element-title">Web Designer</h3>
+              <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
               <h4 className="vertical-timeline-element-subtitle">
-                San Francisco, CA
+                <a href="https://www.nic.ru/">RU-CENTER Group</a>
               </h4>
-              <p>User Experience, Visual Design</p>
+              <p>Client-side programming (mostly with JavaScript & jquery & knockout.js & CSS & HTML & XSLT & TWIG)</p>
             </VerticalTimelineElement>
+
+
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
-              date="April 2013"
+              date="2011 - 2014"
               iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             >
               <h3 className="vertical-timeline-element-title">
-                Content Marketing for Web, Mobile and Social Media
+                Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                Online Course
+                <a href="https://sweb.ru/">SpaceWeb Hosting</a>
               </h4>
-              <p>Strategy, Social Media</p>
+              <p>Client-side programming (mostly with JavaScript & CSS & HTML & XSLT)</p>
             </VerticalTimelineElement>
+
+
+
+
+
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="November 2012"

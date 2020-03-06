@@ -18,7 +18,7 @@ module.exports = {
   menu: [
     { label: 'home', slug: '/' },
     { label: 'about', slug: '/about/' },
-    { label: 'blog', slug: '/blog/' },
+    // { label: 'blog', slug: '/blog/' },
     // { label: 'talks', slug: '/talks/' },
     { label: 'contact', slug: '/contact/' },
   ],

@@ -33,7 +33,7 @@ class MenuItem extends React.PureComponent {
     };
   }
 
-  open = (event) => {
+  open = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });

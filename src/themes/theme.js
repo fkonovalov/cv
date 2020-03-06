@@ -157,7 +157,7 @@ const theme = {
     backgroundColor: colors.accentColors[1]
   },
   timeline: {
-    backgroundColor: colors.bgColors
+    backgroundColor: colors.white
   },
   h1: {
     fontSize: scale(5.8),
@@ -177,7 +177,7 @@ const theme = {
   h4: {
     fontSize: scale(2),
     margin: 0,
-    padding: `${scale(6)} 0 0 0`
+    padding: `0.5rem 0`
   },
   h5: {
     fontSize: scale(1),

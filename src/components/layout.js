@@ -12,7 +12,7 @@ import theme from '../themes/theme';
 import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
 import Helmet from 'react-helmet';
 import Welcome from './Welcome';
-import Timeline from './Timeline/Timeline';
+// import Timeline from './Timeline/Timeline';
 
 const messages = { en, ru };
 
@@ -55,8 +55,7 @@ const Layout = props => {
           </FormattedMessage>
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
           {(url === '/' || url === '/ru/') && <Welcome author={author} langKey={langKey} />}
-          {(url === '/' || url === '/ru/') && <Timeline author={author} langKey={langKey} />}
-          {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
+          {/*{(url === '/' || url === '/ru/') && <Timeline author={author} langKey={langKey} />}*/}
           <Container>
             <main>{children}</main>
           </Container>
