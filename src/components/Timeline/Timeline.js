@@ -1,20 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Grid, Cell } from "styled-css-grid";
-import { media } from "../../constants/responsive";
-import IconWork from "../Icons/IconWork.js";
-import IconEducation from "../Icons/IconEducation.js";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Grid } from 'styled-css-grid';
+import { media } from '../../constants/responsive';
+import IconWork from '../Icons/IconWork.js';
+import IconEducation from '../Icons/IconEducation.js';
 
 import {
   VerticalTimeline,
   VerticalTimelineElement
-} from "react-vertical-timeline-component";
+} from 'react-vertical-timeline-component';
 
-import "./styles.css";
+import './styles.css';
 
 const Timeline = ({ className, langKey }) => {
-
   const timeLineTitle = () => ({
     en: `Work experience & Education`,
     ru: `Опыт работы и обучение`
@@ -30,16 +29,18 @@ const Timeline = ({ className, langKey }) => {
       <Wrapper>
         <div>
           <h2 dangerouslySetInnerHTML={{ __html: timeLineTitle()[langKey] }} />
-          <h5 dangerouslySetInnerHTML={{ __html: timeLineSubTitle()[langKey] }} />
+          <h5
+            dangerouslySetInnerHTML={{ __html: timeLineSubTitle()[langKey] }}
+          />
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)"
+                borderRight: '7px solid  rgb(33, 150, 243)'
               }}
               date="2017 - present"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<IconWork />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -56,7 +57,7 @@ const Timeline = ({ className, langKey }) => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2016 - present"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<IconWork />}
             >
               <h3 className="vertical-timeline-element-title">Co Founder</h3>
@@ -64,19 +65,24 @@ const Timeline = ({ className, langKey }) => {
                 <a href="https://tagbox.me/">TagBox</a>
               </h4>
               <p>
-                TagBox aims to create an easy experience to built up an e-commerce site through an instagram account.
+                TagBox aims to create an easy experience to built up an
+                e-commerce site through an instagram account.
               </p>
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2016 - 2017"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<IconEducation />}
             >
-              <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
+              <h3 className="vertical-timeline-element-title">
+                Frontend Developer
+              </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://selectel.ru/">Selectel - IT Infrastructure Solutions</a>
+                <a href="https://selectel.ru/">
+                  Selectel - IT Infrastructure Solutions
+                </a>
               </h4>
               <p>UI development, Angular, Native Javascript, jQuery, SCSS</p>
             </VerticalTimelineElement>
@@ -84,20 +90,24 @@ const Timeline = ({ className, langKey }) => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2014 - 2015"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
-              <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
+              <h3 className="vertical-timeline-element-title">
+                Frontend Developer
+              </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 <a href="https://www.nic.ru/">RU-CENTER Group</a>
               </h4>
-              <p>Client-side programming (mostly with JavaScript & jquery & knockout.js & CSS & HTML & XSLT & TWIG)</p>
+              <p>
+                Client-side programming (mostly with JavaScript & jquery &
+                knockout.js & CSS & HTML & XSLT & TWIG)
+              </p>
             </VerticalTimelineElement>
-
 
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2011 - 2014"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">
                 Frontend Developer
@@ -105,17 +115,16 @@ const Timeline = ({ className, langKey }) => {
               <h4 className="vertical-timeline-element-subtitle">
                 <a href="https://sweb.ru/">SpaceWeb Hosting</a>
               </h4>
-              <p>Client-side programming (mostly with JavaScript & CSS & HTML & XSLT)</p>
+              <p>
+                Client-side programming (mostly with JavaScript & CSS & HTML &
+                XSLT)
+              </p>
             </VerticalTimelineElement>
-
-
-
-
 
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="November 2012"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">
                 Agile Development Scrum Master
@@ -128,7 +137,7 @@ const Timeline = ({ className, langKey }) => {
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2002 - 2006"
-              iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">
                 Bachelor of Science in Interactive Digital Media Visual Imaging
@@ -139,7 +148,7 @@ const Timeline = ({ className, langKey }) => {
               <p>Creative Direction, Visual Design</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+              iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             />
           </VerticalTimeline>
         </div>
