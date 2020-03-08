@@ -183,7 +183,6 @@ const Wrapper = styled(Grid)`
 `;
 
 Timeline.propTypes = {
-  author: PropTypes.object.isRequired,
   className: PropTypes.string,
   langKey: PropTypes.string
 };
