@@ -7,7 +7,8 @@ import {
   FaTwitter,
   FaLinkedin,
   FaInstagram,
-  FaGithub
+  FaGithub,
+  FaCodepen
 } from 'react-icons/fa';
 import { media } from '../constants/responsive';
 import IconAvatar from './Icons/IconAvatar.js';
@@ -34,6 +35,15 @@ const Welcome = ({ className, langKey }) => {
             </Name>
             <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
             <SocialLinks>
+              <li>
+                <A
+                  href="https://codepen.io/fkonovalov"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <FaCodepen />
+                </A>
+              </li>
               <li>
                 <A
                   href="https://twitter.com/discotune"
@@ -202,12 +212,12 @@ const Bio = styled.div`
 `;
 
 const SocialLinks = styled.ul`
+  display: flex;
   margin-top: 26px;
   margin-bottom: 30px;
   list-style: none;
   li {
-    display: inline-block;
-    margin-right: 5px;
+    margin-right: 8px;
   }
   ${media.md`
     margin-bottom: 0;

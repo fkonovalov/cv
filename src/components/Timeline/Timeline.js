@@ -37,9 +37,8 @@ const Timeline = ({ className, langKey }) => {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentArrowStyle={{
-                borderRight: '7px solid  rgb(33, 150, 243)'
+                borderRight: '7px solid #e3e3e3'
               }}
               date="2017 - present"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -49,22 +48,71 @@ const Timeline = ({ className, langKey }) => {
                 Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://space307.com/">Space307</a>
+                <a
+                  href="https://space307.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Space307
+                </a>
               </h4>
               <p>
-                UI development, Visual Design, ReactJS, SCSS, TWIG, GatsbyJS,
+                UI development, Visual Design, ReactJS, SCSS, TWIG, GatsbyJS
               </p>
+
+              <p>
+                Develop{' '}
+                <a
+                  href="https://olymptrade.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Olymptrade trading platform
+                </a>
+              </p>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentArrowStyle={{
+                borderRight: '7px solid  #e3e3e3'
+              }}
+              date="2017"
+              iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+              icon={<IconEducation />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Agile Development Scrum Master
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                <a
+                  href="https://scrumtrek.ru/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  ScrumTrek Certification
+                </a>
+              </h4>
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2016 - present"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid #e3e3e3'
+              }}
               icon={<IconWork />}
             >
               <h3 className="vertical-timeline-element-title">Co Founder</h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://tagbox.me/">TagBox</a>
+                <a
+                  href="https://tagbox.me/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  TagBox
+                </a>
               </h4>
               <p>
                 TagBox aims to create an easy experience to built up an
@@ -76,13 +124,20 @@ const Timeline = ({ className, langKey }) => {
               className="vertical-timeline-element--work"
               date="2016 - 2017"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid #e3e3e3'
+              }}
               icon={<IconEducation />}
             >
               <h3 className="vertical-timeline-element-title">
                 Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://selectel.ru/">
+                <a
+                  href="https://selectel.ru/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   Selectel - IT Infrastructure Solutions
                 </a>
               </h4>
@@ -92,30 +147,73 @@ const Timeline = ({ className, langKey }) => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2014 - 2015"
+              contentArrowStyle={{
+                borderRight: '7px solid #e3e3e3'
+              }}
+              icon={<IconWork />}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">
                 Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://www.nic.ru/">RU-CENTER Group</a>
+                <a
+                  href="https://www.nic.ru/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  RU-CENTER Group
+                </a>
               </h4>
               <p>
-                Client-side programming (mostly with JavaScript & jquery &
-                knockout.js & CSS & HTML & XSLT & TWIG)
+                Client-side programming (mostly with JavaScript, jQuery,
+                knockout.js, CSS, HTML, XSLT and TWIG)
               </p>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentArrowStyle={{
+                borderRight: '7px solid  #e3e3e3'
+              }}
+              date="2015"
+              iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+              icon={<IconEducation />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                "Javascript, DOM, interfaces for programmers" course
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                <a
+                  href="https://learn.javascript.ru/courses/js-20151005-2130/fedor-konovalov/ru/certificate.jpg"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  JavaScript.ru Certification
+                </a>
+              </h4>
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2011 - 2014"
-              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid #e3e3e3'
+              }}
+              icon={<IconWork />}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">
                 Frontend Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                <a href="https://sweb.ru/">SpaceWeb Hosting</a>
+                <a
+                  href="https://sweb.ru/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  SpaceWeb Hosting
+                </a>
               </h4>
               <p>
                 Client-side programming (mostly with JavaScript & CSS & HTML &
@@ -124,34 +222,21 @@ const Timeline = ({ className, langKey }) => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="November 2012"
-              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            >
-              <h3 className="vertical-timeline-element-title">
-                Agile Development Scrum Master
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                Certification
-              </h4>
-              <p>Creative Direction, User Experience, Visual Design</p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--education"
-              date="2002 - 2006"
-              iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            >
-              <h3 className="vertical-timeline-element-title">
-                Bachelor of Science in Interactive Digital Media Visual Imaging
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                Bachelor Degree
-              </h4>
-              <p>Creative Direction, Visual Design</p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentArrowStyle={{
+                borderRight: '7px solid  #e3e3e3'
+              }}
+              date="2005 - 2010"
               iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            />
+              icon={<IconEducation />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Taganrog University of Management and Economics
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                <p>Marketing Specialist</p>
+              </h4>
+            </VerticalTimelineElement>
           </VerticalTimeline>
         </TimeLineContainer>
       </Wrapper>
