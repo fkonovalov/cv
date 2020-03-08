@@ -7,7 +7,8 @@ module.exports = {
     },
     "extends": [
         "standard",
-        "standard-react"
+        "standard-react",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,7 +19,8 @@ module.exports = {
     },
     "parser": "babel-eslint",
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "accessor-pairs": "error",
@@ -286,6 +288,7 @@ module.exports = {
         "vars-on-top": "off",
         "wrap-iife": "error",
         "wrap-regex": "error",
+        "prettier/prettier": "error",
         "yield-star-spacing": "error",
         "yoda": [
             "error",

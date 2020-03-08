@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Grid, Cell } from 'styled-css-grid';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 import { media } from '../constants/responsive';
+import IconAvatar from './Icons/IconAvatar.js';
 import Avatar from './img/welcome_avatar.svg';
 
-const Welcome = ({ author, className, langKey }) => {
+const Welcome = ({ className, langKey }) => {
   const getIntro = () => ({
     en: `Hello! My name is <span class="name">Fyodor</span>`,
     ru: `Привет! Меня зовут <span class="name">Фёдор</span>`
   });
   const getBio = () => ({
     en: 'I\'m a frontend developer at <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.',
-    ru: 'Я frontend developer в  <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>.'
+    ru: 'Я frontend developer в  <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.'
   });
   return (
     <MainWrapper className={className}>
@@ -54,8 +55,9 @@ const Welcome = ({ author, className, langKey }) => {
             </SocialLinks>
           </BioContainer>
         </BioWrapper>
-        <PictureContainer center>
-          <ProfilePicture src={Avatar} alt="Fyodor Avatar" width={410} height={341} />
+        <PictureContainer>
+          {/*<ProfilePicture src={Avatar} alt="Fyodor Avatar" width={410} height={341} />*/}
+          <IconAvatar />
         </PictureContainer>
         <RightGapCell />
       </Wrapper>
@@ -111,14 +113,17 @@ const BioContainer = styled.div`
 `;
 
 const PictureContainer = styled(Cell)`
+  display: grid;
   position: relative;
   grid-column: 2 / span 2;
   grid-row: 1 / span 1;
-  background: url('/img/welcome_bg.png') top left;
+  place-items: center;
+  background: none;
   border-radius: 50%;
   ${media.md`
     max-width: none;
     border-radius: 0%;
+    background: url('/img/welcome_bg.png') top left;
     background-size: 1px 408px;
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;

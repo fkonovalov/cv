@@ -10,19 +10,27 @@ import {
   VerticalTimeline,
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
+
 import "./styles.css";
 
 const Timeline = ({ className, langKey }) => {
-  const getIntro = () => ({
-    en: `Hello! My name is <span class="name">Fyodor</span>`,
-    ru: `Привет! Меня зовут <span class="name">Фёдор</span>`
+
+  const timeLineTitle = () => ({
+    en: `Work experience & Education`,
+    ru: `Опыт работы и обучение`
   });
+
+  const timeLineSubTitle = () => ({
+    en: `My previous jobs and my qualifications.`,
+    ru: `Мои предыдущие места работы и квалификация.`
+  });
+
   return (
     <MainWrapper className={className}>
       <Wrapper>
         <div>
-          <div>Work experience & Education</div>
-          <div>My previous jobs and my qualifications.</div>
+          <h2 dangerouslySetInnerHTML={{ __html: timeLineTitle()[langKey] }} />
+          <h5 dangerouslySetInnerHTML={{ __html: timeLineSubTitle()[langKey] }} />
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
