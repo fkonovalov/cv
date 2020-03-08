@@ -2,10 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Grid, Cell } from 'styled-css-grid';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub
+} from 'react-icons/fa';
 import { media } from '../constants/responsive';
 import IconAvatar from './Icons/IconAvatar.js';
-import Avatar from './img/welcome_avatar.svg';
 
 const Welcome = ({ className, langKey }) => {
   const getIntro = () => ({
@@ -13,8 +18,10 @@ const Welcome = ({ className, langKey }) => {
     ru: `Привет! Меня зовут <span class="name">Фёдор</span>`
   });
   const getBio = () => ({
-    en: 'I\'m a frontend developer at <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.',
-    ru: 'Я frontend developer в  <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.'
+    en:
+      'I\'m a frontend developer at <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.',
+    ru:
+      'Я frontend developer в  <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.'
   });
   return (
     <MainWrapper className={className}>
@@ -28,27 +35,47 @@ const Welcome = ({ className, langKey }) => {
             <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
             <SocialLinks>
               <li>
-                <A href="https://twitter.com/discotune" target="_blank" rel="noreferrer noopener">
+                <A
+                  href="https://twitter.com/discotune"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaTwitter />
                 </A>
               </li>
               <li>
-                <A href="https://www.linkedin.com/in/fkonovalov/" target="_blank" rel="noreferrer noopener">
+                <A
+                  href="https://www.linkedin.com/in/fkonovalov/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaLinkedin />
                 </A>
               </li>
               <li>
-                <A href="https://www.instagram.com/dakrasivo/" target="_blank" rel="noreferrer noopener">
+                <A
+                  href="https://www.instagram.com/dakrasivo/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaInstagram />
                 </A>
               </li>
               <li>
-                <A href="https://www.facebook.com/discotune" target="_blank" rel="noreferrer noopener">
+                <A
+                  href="https://www.facebook.com/discotune"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaFacebook />
                 </A>
               </li>
               <li>
-                <A href="https://github.com/fkonovalov" target="_blank" rel="noreferrer noopener">
+                <A
+                  href="https://github.com/fkonovalov"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaGithub />
                 </A>
               </li>
@@ -80,9 +107,9 @@ const Wrapper = styled(Grid)`
   line-height: ${props => props.theme.blog.author.lineHeight};
   height: auto;
   grid-auto-flow: row dense;
-  grid-auto-rows: minmax(20px,auto);
+  grid-auto-rows: minmax(20px, auto);
   grid-template-columns: auto 4.2rem 4.2rem auto;
-  grid-gap: 0px;
+  grid-gap: 0;
   ${media.md`
     height: 408px;
     grid-auto-flow: column;
@@ -106,7 +133,7 @@ const BioWrapper = styled(Cell)`
 `;
 
 const BioContainer = styled.div`
-  padding: 0px;
+  padding: 0;
   ${media.md`
     padding: 0 45px;
   `}
@@ -127,16 +154,6 @@ const PictureContainer = styled(Cell)`
     background-size: 1px 408px;
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-  `}
-`;
-
-const ProfilePicture = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  ${media.md`
-    border-radius: 0%;
-    width: 280px;
   `}
 `;
 
@@ -165,15 +182,17 @@ const Name = styled.div`
     font-size: 2.625rem;
   `}
   .name {
-    color: ${({theme}) => theme.colors.brand};
+    color: ${({ theme }) => theme.colors.brand};
   }
 `;
 
 const Bio = styled.div`
-  line-height: ${({theme}) => theme.scale(3.2)};
+  line-height: ${({ theme }) => theme.scale(3.2)};
   display: block;
   font-size: 0.9rem;
-  br { display: none; }
+  br {
+    display: none;
+  }
   padding: 0 35px;
   ${media.md`
     br { display: block; }
@@ -191,7 +210,7 @@ const SocialLinks = styled.ul`
     margin-right: 5px;
   }
   ${media.md`
-    margin-bottom: 0px;
+    margin-bottom: 0;
   `}
 `;
 
@@ -211,7 +230,6 @@ const A = styled.a`
 `;
 
 Welcome.propTypes = {
-  author: PropTypes.object.isRequired,
   className: PropTypes.string,
   langKey: PropTypes.string
 };

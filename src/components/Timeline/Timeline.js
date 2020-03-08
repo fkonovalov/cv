@@ -167,7 +167,7 @@ const Wrapper = styled(Grid)`
   grid-auto-flow: row dense;
   grid-auto-rows: minmax(20px, auto);
   grid-template-columns: 1fr;
-  grid-gap: 0px;
+  grid-gap: 0;
   ${media.md`
     grid-auto-flow: column;
   `}

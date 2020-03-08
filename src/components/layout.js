@@ -9,7 +9,12 @@ import { IntlProvider, FormattedMessage } from 'react-intl';
 import en from '../data/messages/en';
 import ru from '../data/messages/ru';
 import theme from '../themes/theme';
-import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
+import {
+  getLangs,
+  getUrlForLang,
+  getCurrentLangKey,
+  isHomePage
+} from 'ptz-i18n';
 import Helmet from 'react-helmet';
 import Welcome from './Welcome';
 // import Timeline from './Timeline/Timeline';
@@ -23,11 +28,19 @@ const Layout = props => {
   const isHome = isHomePage(url, false, langs);
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey !== 'en' ? langKey : ''}`;
-  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map(item => ({
-    ...item,
-    link: item.link.replace(`/${defaultLangKey}/`, '/')
-  }));
-  const { menu, author, sourceCodeLink, siteUrl, description } = props.data.site.siteMetadata;
+  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map(
+    item => ({
+      ...item,
+      link: item.link.replace(`/${defaultLangKey}/`, '/')
+    })
+  );
+  const {
+    menu,
+    author,
+    sourceCodeLink,
+    siteUrl,
+    description
+  } = props.data.site.siteMetadata;
 
   return (
     <ThemeProvider theme={theme}>
@@ -41,7 +54,10 @@ const Layout = props => {
                 <meta property="og:title" content={txt} />
                 <meta property="og:description" content={description} />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content={`${siteUrl}${withPrefix(url)}`} />
+                <meta
+                  property="og:url"
+                  content={`${siteUrl}${withPrefix(url)}`}
+                />
                 {/*<meta property="og:image" content={`${siteUrl}${withPrefix('/meta.jpg')}`} />*/}
                 <meta property="fb:app_id" content="2528326990770132" />
                 <meta name="twitter:card" content="summary_large_image" />
@@ -53,13 +69,25 @@ const Layout = props => {
               </Helmet>
             )}
           </FormattedMessage>
-          <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
-          {(url === '/' || url === '/ru/') && <Welcome author={author} langKey={langKey} />}
+          <Header
+            isHome={isHome}
+            homeLink={homeLink}
+            langs={langsMenu}
+            url={url}
+            menu={menu}
+          />
+          {(url === '/' || url === '/ru/') && (
+            <Welcome author={author} langKey={langKey} />
+          )}
           {/*{(url === '/' || url === '/ru/') && <Timeline author={author} langKey={langKey} />}*/}
           <Container>
             <main>{children}</main>
           </Container>
-          <Footer author={author} langs={langsMenu} sourceCodeLink={sourceCodeLink} />
+          <Footer
+            author={author}
+            langs={langsMenu}
+            sourceCodeLink={sourceCodeLink}
+          />
           <GlobalStyle />
         </BodyContainer>
       </IntlProvider>
@@ -77,7 +105,8 @@ const BodyContainer = styled.div`
   bottom: 0;
   min-height: 100%;
   overflow-x: hidden;
-  font-feature-settings: 'calt' 1, 'clig' 1, 'dlig' 1, 'kern' 1, 'liga' 1, 'salt' 1;
+  font-feature-settings: 'calt' 1, 'clig' 1, 'dlig' 1, 'kern' 1, 'liga' 1,
+    'salt' 1;
   padding-top: ${props => props.theme.header.height}px;
 `;
 
@@ -160,10 +189,10 @@ const GlobalStyle = createGlobalStyle`
   }
   .footnotes {
     ol, p {
-      font-size: 14px !important;
+      font-size: 14px;
     }
     p {
-      padding-top: 0px !important;
+      padding-top: 0;
     }
     .footnote-backref {
       display: none;
