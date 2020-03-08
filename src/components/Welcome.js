@@ -197,7 +197,7 @@ const Name = styled.div`
 `;
 
 const Bio = styled.div`
-  line-height: ${({ theme }) => theme.scale(3.2)};
+  // line-height: ${({ theme }) => theme.scale(3.2)};
   display: block;
   font-size: 0.9rem;
   line-height: 1.5rem;
