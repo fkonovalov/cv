@@ -11,25 +11,25 @@ export const breakpoints = {
 // iterate through the sizes and create a media template
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
   accumulator[label] = (...args) => css`
-      @media (min-width: ${breakpoints[label]}px) {
-        ${css(...args)};
-      }
-    `;
+    @media (min-width: ${breakpoints[label]}px) {
+      ${css(...args)};
+    }
+  `;
   return accumulator;
 }, {});
 
 export const visible = Object.keys(breakpoints).reduce((accumulator, label) => {
   accumulator[label] = () => css`
-      display: none;
-      ${media[label]`display: block;`};
-    `;
+    display: none;
+    ${media[label]`display: block;`};
+  `;
   return accumulator;
 }, {});
 
 export const hidden = Object.keys(breakpoints).reduce((accumulator, label) => {
   accumulator[label] = () => css`
-      display: block;
-      ${media[label]`display: none;`};
-    `;
+    display: block;
+    ${media[label]`display: none;`};
+  `;
   return accumulator;
 }, {});

@@ -111,12 +111,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            subsets: [`cyrillic`]
-          }
-        ],
+        fonts: [`Roboto:300,400,700`],
         display: 'swap'
       }
     }
