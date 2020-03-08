@@ -200,13 +200,15 @@ const Bio = styled.div`
   line-height: ${({ theme }) => theme.scale(3.2)};
   display: block;
   font-size: 0.9rem;
+  line-height: 1.5rem;
   br {
     display: none;
   }
   padding: 0 35px;
   ${media.md`
     br { display: block; }
-    font-size: 0.9375rem;
+    font-size: 1.22rem;
+    line-height: 1.9rem;
     padding: 0 120px 0 0;
   `}
 `;
@@ -216,6 +218,10 @@ const SocialLinks = styled.ul`
   margin-top: 26px;
   margin-bottom: 30px;
   list-style: none;
+  justify-content: center;
+  ${media.md`
+    justify-content: flex-start;
+  `}
   li {
     margin-right: 8px;
   }

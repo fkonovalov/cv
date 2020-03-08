@@ -24,6 +24,16 @@ const Timeline = ({ className, langKey }) => {
     ru: `Мои предыдущие места работы и квалификация.`
   });
 
+  const MoreAboutTagBox = () => ({
+    en: `More about TagBox at vc.ru`,
+    ru: `Подробнее о TagBox на vc.ru`
+  });
+
+  const AboutTagBox = () => ({
+    en: `TagBox aims to create an easy experience to built up an e-commerce site through an instagram account.`,
+    ru: `TagBox — сервис для создания интернет-магазина из страницы в Instagram`
+  });
+
   return (
     <MainWrapper className={className}>
       <Wrapper>
@@ -114,9 +124,19 @@ const Timeline = ({ className, langKey }) => {
                   TagBox
                 </a>
               </h4>
+              <p dangerouslySetInnerHTML={{ __html: AboutTagBox()[langKey] }} />
+
               <p>
-                TagBox aims to create an easy experience to built up an
-                e-commerce site through an instagram account.
+                <a
+                  href={
+                    langKey === 'en'
+                      ? 'https://translate.google.com/translate?hl=&sl=ru&tl=en&u=https%3A%2F%2Fvc.ru%2Ftribuna%2F23068-tagbox'
+                      : 'https://vc.ru/tribuna/23068-tagbox'
+                  }
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  dangerouslySetInnerHTML={{ __html: MoreAboutTagBox()[langKey] }}
+                />
               </p>
             </VerticalTimelineElement>
 

@@ -10,7 +10,7 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-figure-caption`,
-            options: { figureClassName: 'md-figure' },
+            options: { figureClassName: 'md-figure' }
           },
           {
             resolve: `gatsby-remark-images`,
@@ -18,34 +18,34 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 740,
-            },
+              maxWidth: 740
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
-            },
+              wrapperStyle: 'margin-bottom: 1.0725rem'
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-        ],
-      },
+          'gatsby-remark-smartypants'
+        ]
+      }
     },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
+        name: 'pages'
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: '',
-      },
+        trackingId: ''
+      }
     },
     {
       resolve: 'gatsby-plugin-manifest',
@@ -56,14 +56,14 @@ module.exports = {
           {
             src: '/logo.svg',
             sizes: 'any',
-            type: 'image/svg+xml',
-          },
+            type: 'image/svg+xml'
+          }
         ],
         start_url: '/',
         background_color: 'white',
         theme_color: 'white',
-        display: 'minimal-ui',
-      },
+        display: 'minimal-ui'
+      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
@@ -98,7 +98,8 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-i18n-tags',
-      options: { // Default options
+      options: {
+        // Default options
         tagPage: 'src/templates/tag-page.js',
         tagsUrl: '/tags/',
         langKeyForNull: 'en',
@@ -111,11 +112,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `limelight`,
-          `Poppins:300,400,500,700` // you can also specify font weights and styles
+          {
+            family: `Roboto`,
+            subsets: [`cyrillic`]
+          }
         ],
         display: 'swap'
       }
     }
-  ],
+  ]
 };
