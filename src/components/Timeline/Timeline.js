@@ -27,9 +27,11 @@ const Timeline = ({ className, langKey }) => {
   return (
     <MainWrapper className={className}>
       <Wrapper>
-        <div>
-          <h2 dangerouslySetInnerHTML={{ __html: timeLineTitle()[langKey] }} />
-          <h5
+        <TimeLineContainer>
+          <Title
+            dangerouslySetInnerHTML={{ __html: timeLineTitle()[langKey] }}
+          />
+          <SubTitle
             dangerouslySetInnerHTML={{ __html: timeLineSubTitle()[langKey] }}
           />
           <VerticalTimeline>
@@ -151,7 +153,7 @@ const Timeline = ({ className, langKey }) => {
               iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             />
           </VerticalTimeline>
-        </div>
+        </TimeLineContainer>
       </Wrapper>
     </MainWrapper>
   );
@@ -180,6 +182,22 @@ const Wrapper = styled(Grid)`
   ${media.md`
     grid-auto-flow: column;
   `}
+`;
+
+const TimeLineContainer = styled.div`
+  padding: 18px;
+  ${media.md`
+    padding-top: 40px;
+  `}
+`;
+
+const Title = styled.h2`
+  padding: 8px 0;
+`;
+
+const SubTitle = styled.h3`
+  padding: 8px 0 26px;
+  font-size: 1.1rem;
 `;
 
 Timeline.propTypes = {
