@@ -5,12 +5,12 @@ layout: page
 draft: false
 featured: false
 tags: 
-  - тест
+  - personal
+  - development
 image: ./images/post.jpg
-lang: ru
 structuredData:
   alternativeHeadline: '...'  
-  locationCreated: location
+  locationCreated: Barueri BR
   type: TechArticle  
   dependencies: Javascript basics
   proficiencyLevel: Beginner
@@ -33,7 +33,7 @@ structuredData:
   accessibilitySummary: ...
   aggregateRating: ...
   audience: ...
-  author:
+  author: Fyodor
   comment: ...
   commentCount: ...
   contentLocation: ...

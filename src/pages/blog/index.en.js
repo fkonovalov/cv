@@ -2,7 +2,7 @@ import React from 'react';
 import Blog from '../../components/pages/Blog';
 import { graphql } from 'gatsby';
 
-export default (props) => <Blog {...props} />;
+export default props => <Blog {...props} />;
 
 export const pageQuery = graphql`
   query BlogEnQuery {
@@ -15,37 +15,37 @@ export const pageQuery = graphql`
           defaultLink
         }
       }
-    },
+    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { draft: { ne: true } },
+        frontmatter: { draft: { ne: true } }
         fields: { langKey: { regex: "/(en|any)/" } }
-      },
+      }
     ) {
       edges {
-        node{
-          frontmatter{
-            title,
-            tags,
-            date,
+        node {
+          frontmatter {
+            title
+            tags
+            date
             image {
-              childImageSharp{
-                  sizes(maxWidth: 750) {
-                      ...GatsbyImageSharpSizes
-                  }
+              childImageSharp {
+                sizes(maxWidth: 750) {
+                  ...GatsbyImageSharpSizes
+                }
               }
             }
-          },
-          fields{
-            slug,
-            langKey,
-            tagSlugs{
-              tag,
+          }
+          fields {
+            slug
+            langKey
+            tagSlugs {
+              tag
               link
             }
-          },
+          }
           excerpt
         }
       }
