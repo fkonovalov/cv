@@ -6,8 +6,9 @@
 # Thumbnails
 ._*
 
-### vscode template
+### vscode/idea template
 .vscode/
+.idea/
 
 # Dependency directory
 node_modules
