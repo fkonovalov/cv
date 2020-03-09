@@ -44,7 +44,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-160040263-1'
+        trackingId: 'UA-160040263-1',
+        cookieDomain: 'fkonovalov.com'
       }
     },
     {
