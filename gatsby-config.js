@@ -54,11 +54,11 @@ module.exports = {
         name: 'Fyodor Konovalov',
         short_name: 'Fyodor',
         icons: [
-          {
-            src: '/logo.svg',
-            sizes: 'any',
-            type: 'image/svg+xml'
-          }
+          // {
+          //   src: '/logo.svg',
+          //   sizes: 'any',
+          //   type: 'image/svg+xml'
+          // }
         ],
         start_url: '/',
         background_color: 'white',

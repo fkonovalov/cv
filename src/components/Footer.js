@@ -17,14 +17,21 @@ const Footer = ({ author, langs, sourceCodeLink, currentLangKey }) => {
               {' Made with '}
               <HeartIcon />
               {' and '}
-              <a href="https://www.gatsbyjs.org/" target="_blank">
-                <GatsbyIcon src={withPrefix('/img/gatsbyjs.svg')} alt="Gatsby" />
+              <a
+                href="https://www.gatsbyjs.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <GatsbyIcon
+                  src={withPrefix('/img/gatsbyjs.svg')}
+                  alt="Gatsby"
+                />
               </a>
               {' by '} <span>{author.name}</span>
             </span>
           </LeftCell>
           <MiddleCell middle>
-            <a href={sourceCodeLink} target="_blank">
+            <a href={sourceCodeLink} target="_blank" rel="noreferrer noopener">
               <GithubIcon />
             </a>
           </MiddleCell>
@@ -71,7 +78,8 @@ const HeartIcon = styled(FaHeart)`
   margin: 0 6px;
   cursor: pointer;
   transition: all 0.4s;
-  animation: ${keyframes`to { transform: scale(1.2); }`} 0.42s infinite alternate;
+  animation: ${keyframes`to { transform: scale(1.2); }`} 0.42s infinite
+    alternate;
   :hover {
     color: ${props => props.theme.colors.red}!important;
   }
