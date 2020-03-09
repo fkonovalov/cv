@@ -1,29 +1,30 @@
 ---
-title: Declaração de missão pessoal
+title: My personal mission statement
 date: '2018-08-01'
-layout: post
+layout: page
 draft: false
 featured: false
-tags:
-  - Testando
-image: ./images/20180801.jpg
+tags: 
+  - тест
+image: ./images/post.jpg
+lang: ru
 structuredData:
-  alternativeHeadline: ...  
-  locationCreated: Barueri BR
+  alternativeHeadline: '...'  
+  locationCreated: location
   type: TechArticle  
   dependencies: Javascript basics
   proficiencyLevel: Beginner
   articleSection: Functional Programming
-  pageEnd: ...
-  pageStart: ...
-  pagination: ...
+  pageEnd: '...'
+  pageStart: '...'
+  pagination: '...'
   about:
     name: Functional Programming
     alternateName: FP
     description: Functional Programming is a programming style or pattern
       which compose pure functions to build a software.
     identifier: functional-programming
-    image: ...
+    image: '...'
     sameAs: https://en.wikipedia.org/wiki/Functional_programming
   accessMode: textual
   accessModeSufficient: textual
@@ -32,7 +33,7 @@ structuredData:
   accessibilitySummary: ...
   aggregateRating: ...
   audience: ...
-  author: hugomn
+  author:
   comment: ...
   commentCount: ...
   contentLocation: ...

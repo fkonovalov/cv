@@ -1,9 +1,8 @@
 const languages = require('./languages');
 
 module.exports = {
-  siteUrl: 'https://mycv.com',
-  description:
-    'Frontend developer. I build high-performance products.',
+  siteUrl: 'https://fkonovalov.com',
+  description: 'Frontend developer. I build high-performance products.',
   author: {
     name: 'Fyodor Konovalov',
     bio:
@@ -11,16 +10,14 @@ module.exports = {
     homeCity: 'Saint-Petersburg',
     email: 'boxfedor@gmail.com',
     twitter: 'discotune',
-    defaultLink: 'https://github.com/fkonovalov'
+    defaultLink: 'https://fkonovalov.com'
   },
   sourceCodeLink: 'https://github.com/fkonovalov/cv',
   disqusShortname: 'fkonovalov',
   menu: [
     { label: 'home', slug: '/' },
     { label: 'about', slug: '/about/' },
-    // { label: 'blog', slug: '/blog/' },
-    // { label: 'talks', slug: '/talks/' },
-    { label: 'contact', slug: '/contact/' },
+    { label: 'contact', slug: '/contact/' }
   ],
   languages,
   contact: [

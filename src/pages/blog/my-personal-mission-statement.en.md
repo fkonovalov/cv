@@ -7,11 +7,11 @@ featured: false
 tags: 
   - personal
   - development
-image: ./images/20180801.jpg
+image: ./images/post.jpg
 lang: en
 structuredData:
   alternativeHeadline: '...'  
-  locationCreated: Barueri BR
+  locationCreated: location
   type: TechArticle  
   dependencies: Javascript basics
   proficiencyLevel: Beginner
