@@ -245,7 +245,7 @@ const theme = {
         margin: `0 0 ${scale(4)}`,
       },
       content: {
-        fontFamily: fonts.Serif,
+        fontFamily: fonts.SansSerif,
         code: {
           color: colors.white,
           fontSize: scale(1),
@@ -289,7 +289,7 @@ const theme = {
       margin: `0 0 ${scale(2)}`,
     },
     content: {
-      fontFamily: fonts.Serif,
+      fontFamily: fonts.SansSerif,
       p: {
         fontSize: scale(1),
         margin: 0,

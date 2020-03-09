@@ -6,22 +6,22 @@ const i18n = {
   content: (
     <>
       <p>
-        I&rsquo;d love to <strong>chat</strong> and <strong>meet new people</strong>. I&rsquo;m looking for{' '}
-        <strong>problems worth solving</strong>, a place that will <strong>challenge me</strong>, and{' '}
-        <strong>opportunities</strong> that I can help others and myself <strong>grow</strong>.&nbsp;
+        I’d love to chat and meet new people. I’m looking for problems worth
+        solving, a place that will challenge me, and opportunities that I can
+        help others and myself grow.
       </p>
       <p>Let&rsquo;s do something awesome.</p>
       <p>
-        Email:&nbsp;<a href="mailto:boxfedor@gmail.com">boxfedor@gmail.com</a>
+        Email:&nbsp;
+        <a href="mailto:hello@fkonovalov.com">hello@fkonovalov.com</a>
         <br />
         Linkedin:&nbsp;
-        <a href="https://linkedin.com/in/fkonovalov/" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://linkedin.com/in/fkonovalov/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           https://linkedin.com/in/fkonovalov/
-        </a>
-        <br />
-        GitHub:&nbsp;
-        <a href="https://github.com/fkonovalov" rel="noopener noreferrer" target="_blank">
-          https://github.com/fkonovalov
         </a>
       </p>
     </>
@@ -31,4 +31,4 @@ const i18n = {
   `
 };
 
-export default (props) => <Page i18n={i18n} {...props} />;
+export default props => <Page i18n={i18n} {...props} />;

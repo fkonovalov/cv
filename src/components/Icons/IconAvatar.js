@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { media } from '../../constants/responsive';
 
-const BurgerImageStyle = styled.svg`
-  max-width: 160px;
+const IconAvatarStyle = styled.svg`
+  max-width: 140px;
 
   ${media.md`
     max-width: 200px;
@@ -18,7 +18,7 @@ const BurgerImageStyle = styled.svg`
 `;
 
 const IconAvatar = props => (
-  <BurgerImageStyle
+  <IconAvatarStyle
     {...props}
     width="220"
     height="240"
@@ -33,7 +33,7 @@ const IconAvatar = props => (
       fill="currentColor"
     />
     <path d="M110 200V190H130V200H110Z" fill="currentColor" />
-  </BurgerImageStyle>
+  </IconAvatarStyle>
 );
 
 export default IconAvatar;

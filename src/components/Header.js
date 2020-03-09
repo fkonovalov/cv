@@ -11,24 +11,23 @@ const delta = 5;
 const navbarHeight = 64;
 
 class Header extends React.Component {
-
   constructor(props) {
     super(props);
-    console.log('[dev:fkonovalov] props', props);
+    // console.log('[dev:fkonovalov] props', props);
     this.state = {
       didScroll: true,
       lastScrollTop: 0,
       hidden: false
     };
-  };
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-  };
+  }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-  };
+  }
 
   hideHeader = () => {
     this.setState({
@@ -44,11 +43,13 @@ class Header extends React.Component {
 
   hasScrolled = throttle(() => {
     const st = window.scrollY;
-    if (Math.abs(this.state.lastScrollTop - st) <= delta) { return; }
+    if (Math.abs(this.state.lastScrollTop - st) <= delta) {
+      return;
+    }
     if (st > this.state.lastScrollTop && st > navbarHeight) {
       this.hideHeader();
     } else {
-      if(st < this.getDocHeight()) {
+      if (st < this.getDocHeight()) {
         this.showHeader();
       }
     }
@@ -59,9 +60,12 @@ class Header extends React.Component {
 
   getDocHeight = () => {
     return Math.max(
-      document.body.scrollHeight, document.documentElement.scrollHeight,
-      document.body.offsetHeight, document.documentElement.offsetHeight,
-      document.body.clientHeight, document.documentElement.clientHeight
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight
     );
   };
 
@@ -89,24 +93,22 @@ class Header extends React.Component {
       </Wrapper>
     );
   }
-};
+}
 
 const Wrapper = styled.header`
   background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05) !important;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !important;
   border-top: 4px solid ${props => props.theme.colors.brand};
   transition: top 0.4s ease-in-out;
   height: ${props => props.theme.header.height}px;
-  top: ${props => props.hidden ? `-${props.theme.header.height}px` : 0};
+  top: ${props => (props.hidden ? `-${props.theme.header.height}px` : 0)};
   box-sizing: border-box;
   position: fixed;
   width: 100%;
-  z-index: 9; 
+  z-index: 9;
 `;
 
-const MenuContainer = styled(Cell)`
-
-`;
+const MenuContainer = styled(Cell)``;
 
 const LanguageContainer = styled(Cell)`
   text-align: right;

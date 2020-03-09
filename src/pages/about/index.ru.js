@@ -6,23 +6,21 @@ const i18n = {
   content: (
     <>
       <p>
-        Hello, it&rsquo;s <strong>Fyodor</strong> here.
+        Моя специализация — front end веб-разработка. Обладая более чем
+        девятилетним опытом работы в этой области, я обладаю знаниями и опытом
+        по созданию современных масштабируемых веб-приложений. В основном я
+        работаю с HTML, CSS, SASS, Styled Components, BEM, Javascript и React.
       </p>
       <p>
-        I&rsquo;m a software engineer with 8 years of experience. I&rsquo;ve started my career when I was{' '}
-        <strong>18</strong>, playing around with HTML, CSS, and JavaScript, creating small websites for companies.
+        Если вам нужна помощь с дизайном или интерфейсной разработкой или если
+        вы хотите получить больше информации, свяжитесь со мной
+        <a href="/contact">свяжитесь со мной</a>
       </p>
-      <p>
-        If you want to know more, <a href="/contact">please contact me</a>. I&rsquo;d love to chat or have a{' '}
-        <strong>beer</strong>.
-      </p>
-      <p>Cheers!</p>
     </>
   ),
   description: `
-    Engineering Lead e desenvolvedor web com 12 anos de experiência.
+    Frontend разработчик.
   `
 };
 
-export default (props) => <Page i18n={i18n} {...props} />;
-
+export default props => <Page i18n={i18n} {...props} />;

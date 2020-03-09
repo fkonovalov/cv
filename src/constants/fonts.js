@@ -7,4 +7,3 @@ export const System =
 
 // System
 export const SansSerif = Roboto;
-export const Serif = MediumSerif;

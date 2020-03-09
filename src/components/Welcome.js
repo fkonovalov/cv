@@ -15,14 +15,14 @@ import IconAvatar from './Icons/IconAvatar.js';
 
 const Welcome = ({ className, langKey }) => {
   const getIntro = () => ({
-    en: `Hello! My name is <span class="name">Fyodor</span>`,
+    en: `Hey! My name is <span class="name">Fyodor</span>`,
     ru: `Привет! Меня зовут <span class="name">Фёдор</span>`
   });
   const getBio = () => ({
     en:
-      'I\'m a frontend developer at <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.',
+      'With over nine years of Front End experience I can help you realize beautiful, scalable user interfaces, responsive websites, front-end architecture, performance, accessibility & more. Technologies I mainly work with are HTML, CSS, SASS, Styled Components, BEM, Javascript and React.',
     ru:
-      'Я frontend developer в  <a href="https://tagbox.me" target="_blank"><b>TagBox</b></a>. We invent, build and invest in startups with the world\'s most influential companies. I build high-performance products and teams.  I\'m a software engineer with 12+ years of experience and I\'ve been managing technology teams in the last 8 years.'
+      'Обладая более чем девятилетним опытом работы во Front End, я могу помочь вам реализовать красивые, масштабируемые пользовательские интерфейсы, адаптивные веб-сайты, front-end архитектуру, улучшить производительность, доступность и многое другое. Основные технологии, которые я использую: HTML, CSS, SASS, Styled Components, BEM, Javascript и React.'
   });
   return (
     <MainWrapper className={className}>
@@ -197,10 +197,9 @@ const Name = styled.div`
 `;
 
 const Bio = styled.div`
-  // line-height: ${({ theme }) => theme.scale(3.2)};
   display: block;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
   br {
     display: none;
   }

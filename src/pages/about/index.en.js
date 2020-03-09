@@ -6,22 +6,27 @@ const i18n = {
   content: (
     <>
       <p>
-        Hello, it&rsquo;s <strong>Fyodor</strong> here.
+        Hey, it&rsquo;s <strong>Fyodor</strong> here.
       </p>
       <p>
-        I&rsquo;m a software engineer with 8 years of experience. I&rsquo;ve started my career when I was{' '}
-        <strong>18</strong>, playing around with HTML, CSS, and JavaScript, creating small websites for companies.
+        My specialization lies in web development, especially the front-end.
+        With over nine years of experience in this area I have the knowledge and
+        experience to create scalable and maintanable code based on best
+        practices. I work with HTML, CSS, SASS, Styled Components, BEM,
+        Javascript и React.
       </p>
       <p>
-        If you want to know more, <a href="/contact">please contact me</a>. I&rsquo;d love to chat or have a{' '}
-        <strong>beer</strong>.
+        If you need help with design or front-end development or if you would
+        like more information, send me an email at 
+        <a href="/contact">please contact me</a>
       </p>
+
       <p>Cheers!</p>
     </>
   ),
   description: `
-    I'm a software engineer with 8+ years of experience.
+    I'm a frontend engineer with 8+ years of experience.
   `
 };
 
-export default (props) => <Page i18n={i18n} {...props} />;
+export default props => <Page i18n={i18n} {...props} />;
