@@ -7,13 +7,13 @@ import { withPrefix } from 'gatsby';
 import FixedContainer from './FixedContainer';
 import { media } from '../constants/responsive';
 
-const Footer = ({ author, langs, sourceCodeLink, currentLangKey }) => {
+const Footer = ({ author, sourceCodeLink }) => {
   return (
     <Wrapper>
       <FixedContainer>
         <Grid columns="repeat(auto-fit,minmax(220px,1fr))">
           <LeftCell middle>
-            <span>
+            <FooterContent>
               {' Made with '}
               <HeartIcon />
               {' and '}
@@ -27,8 +27,8 @@ const Footer = ({ author, langs, sourceCodeLink, currentLangKey }) => {
                   alt="Gatsby"
                 />
               </a>
-              {' by '} <span>{author.name}</span>
-            </span>
+              {' by '} <span>&nbsp;{author.name}</span>
+            </FooterContent>
           </LeftCell>
           <MiddleCell middle>
             <a href={sourceCodeLink} target="_blank" rel="noreferrer noopener">
@@ -99,6 +99,11 @@ const LeftCell = styled(Cell)`
   ${media.md`
     text-align: left;
   `};
+`;
+
+const FooterContent = styled.span`
+  display: flex;
+  align-items: center;
 `;
 
 Footer.propTypes = {
